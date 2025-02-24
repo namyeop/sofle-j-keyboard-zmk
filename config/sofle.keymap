@@ -22,8 +22,8 @@
         };
 
         msc {
-            acceleration-exponent = <1>;      // 0
-            time-to-max-speed-ms = <400>;      // 500
+            acceleration-exponent = <2>;      // 0
+            time-to-max-speed-ms = <300>;      // 500
             delay-ms = <0>;                   //   10
         };
     };
@@ -33,7 +33,7 @@
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
-        tap-ms = <30>;
+        tap-ms = <20>;
     };
 
     keymap {
