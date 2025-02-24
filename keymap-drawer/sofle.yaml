@@ -61,9 +61,9 @@ layers:
   - {t: F18, h: function}
   - $$mdi:mouse-left-click-outline$$
   - media
-  - $$mdi:apple-keyboard-command$$
+  - RGUI
   - '&mt (LGUI LALT LCTRL LSHIFT) F18'
-  - $$mdi:apple-keyboard-control$$
+  - RCTL
   - (RGUI RCTRL)
   function:
   - {t: '`', s: '~'}
@@ -257,6 +257,6 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - media
   - RCTL
-  - '&mt (LGUI LALT LCTRL LSHIFT) F18'
+  - '&mt (RGUI RALT RCTRL RSHIFT) F18'
   - RCTL
   - (RGUI RCTRL)
