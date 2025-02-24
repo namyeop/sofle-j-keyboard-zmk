@@ -36,14 +36,6 @@
         tap-ms = <30>;
     };
 
-    combos {
-        compatible = "zmk,combos";
-        combo_tab_shift {
-            bindings = <&kp TAB>, <&kp LEFT_SHIFT>;
-        };
-    }
-
-
     keymap {
         compatible = "zmk,keymap";
 
