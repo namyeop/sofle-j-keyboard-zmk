@@ -54,15 +54,15 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - {t: windows, h: toggle}
-  - '&mt (LSHIFT | LALT, LGUI)'
-  - '&mt (LSHIFT | LGUI | LCTRL, LCTRL)'
+  - '&mt (LSHIFT | LALT) LGUI'
+  - '&mt (LSHIFT | LGUI | LCTRL) LCTRL'
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - {t: F18, h: function}
   - $$mdi:mouse-left-click-outline$$
   - media
   - RGUI
-  - '&mt (LGUI | LALT | LCTRL |LSHIFT, F18)'
+  - '&mt (LGUI | LALT | LCTRL |LSHIFT) F18'
   - RCTL
   - RGUI
   function:
@@ -249,14 +249,14 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - {t: main, h: toggle}
-  - '&mt (LSHIFT | LALT, LGUI)'
-  - (LSHIFT | LGUI | LCTRL, LCTRL)
+  - '&mt (LSHIFT | LALT) LGUI'
+  - '&mt (LSHIFT | LGUI | LCTRL) LCTRL'
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - {t: F18, h: function}
   - $$mdi:mouse-left-click-outline$$
   - media
   - RCTL
-  - '&mt (RGUI | RALT | RCTRL | RSHIFT, F18)'
+  - '&mt (RGUI | RALT | RCTRL | RSHIFT) F18'
   - RCTL
   - RGUI
