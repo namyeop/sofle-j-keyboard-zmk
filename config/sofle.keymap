@@ -45,7 +45,7 @@
             &kp TAB           &kp Q                     &kp W                               &kp E     &kp R      &kp T      &mmv MOVE_DOWN   &kp Y   &kp U     &kp I                                  &kp O     &kp P      &kp BACKSPACE
             &kp LEFT_CONTROL  &kp A                     &kp S                               &kp D     &kp F      &kp G      &mmv MOVE_LEFT   &kp H   &kp J     &kp K                                  &kp L     &kp SEMI   &kp ENTER
             &mt LSHFT ESC     &kp Z                     &kp X                               &kp C     &kp V      &kp B      &mmv MOVE_RIGHT  &kp N   &kp M     &kp COMMA                              &kp DOT   &kp FSLH   &kp RIGHT_SHIFT
-            &to 3             &mt (LSHIFT | LALT, LGUI) &mt (LSHIFT | LGUI | LCTRL, LCTRL)  &kp LALT  &kp SPACE  &lt 1 F18  &mkp LCLK        &mo 2   &kp RGUI  &mt (LGUI | LALT | LCTRL |LSHIFT, F18) &kp RCTL  &kp RGUI
+            &to 3             &mt (LSHIFT | LALT) LGUI  &mt (LSHIFT | LGUI | LCTRL) LCTRL   &kp LALT  &kp SPACE  &lt 1 F18  &mkp LCLK        &mo 2   &kp RGUI  &mt (LGUI | LALT | LCTRL |LSHIFT) F18 &kp RCTL  &kp RGUI
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -84,7 +84,7 @@
             &kp TAB         &kp Q                       &kp W                               &kp E    &kp R      &kp T      &mmv MOVE_DOWN   &kp Y   &kp U     &kp I                                   &kp O        &kp P        &kp BACKSPACE
             &kp LGUI        &kp A                       &kp S                               &kp D    &kp F      &kp G      &mmv MOVE_LEFT   &kp H   &kp J     &kp K                                   &kp L        &kp SEMI     &kp ENTER
             &mt LSHFT ESC   &kp Z                       &kp X                               &kp C    &kp V      &kp B      &mmv MOVE_RIGHT  &kp N   &kp M     &kp COMMA                               &kp DOT      &kp FSLH     &kp RIGHT_SHIFT
-            &to 0           &mt (LSHIFT | LALT, LGUI)   &kp (LSHIFT | LGUI | LCTRL, LCTRL)  &kp LALT &kp SPACE  &lt 1 F18  &mkp LCLK        &mo 2   &kp RCTL  &mt (RGUI | RALT | RCTRL | RSHIFT, F18) &kp RCTL     &kp RGUI
+            &to 0           &mt (LSHIFT | LALT) LGUI    &mt (LSHIFT | LGUI | LCTRL) LCTRL   &kp LALT &kp SPACE  &lt 1 F18  &mkp LCLK        &mo 2   &kp RCTL  &mt (RGUI | RALT | RCTRL | RSHIFT) F18 &kp RCTL     &kp RGUI
             >;
 
             sensor-bindings = <&scroll_encoder>;
