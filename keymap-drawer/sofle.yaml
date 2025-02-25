@@ -27,7 +27,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:apple-keyboard-control$$
+  - {t: LCAPS, h: '$$mdi:apple-keyboard-control$$'}
   - A
   - S
   - D
@@ -40,7 +40,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - $$mdi:apple-keyboard-shift$$
   - Z
   - X
   - C
@@ -54,17 +54,17 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - {t: windows, h: toggle}
-  - '&mt (LSHIFT | LALT) LGUI'
-  - '&mt (LSHIFT | LGUI | LCTRL) LCTRL'
+  - '&mt (LSHIFT | LALT) LCAPS'
+  - LGUI
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - {t: F18, h: function}
   - $$mdi:mouse-left-click-outline$$
-  - media
+  - {t: '$$mdi:keyboard-esc$$', h: media}
   - RGUI
   - {t: F18, h: Meh+LGUI}
-  - RCTL
-  - RGUI
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:backspace-reverse-outline$$
   function:
   - {t: '`', s: '~'}
   - F1
@@ -84,20 +84,20 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - $$mdi:mouse-scroll-wheel$$
   - $$mdi:mouse-right-click-outline$$
-  - '&mkp MB4'
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-down-bold$$
   - PG UP
   - END
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - \
+  - {t: \, s: '|'}
   - F11
   - {t: '$$mdi:transfer$$', type: trans}
   - '~'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&mkp MB5'
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-left-bold$$
   - PG DN
   - $$mdi:arrow-left-bold$$
@@ -149,7 +149,7 @@ layers:
   - BT CLR ALL
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&mkp MB4'
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -162,7 +162,7 @@ layers:
   - OUT BLE
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&mkp MB5'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -222,7 +222,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - LGUI
+  - {t: LCAPS, h: LGUI}
   - A
   - S
   - D
@@ -235,7 +235,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - $$mdi:apple-keyboard-shift$$
   - Z
   - X
   - C
@@ -249,14 +249,14 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - {t: main, h: toggle}
-  - '&mt (LSHIFT | LALT) LGUI'
-  - '&mt (LSHIFT | LGUI | LCTRL) LCTRL'
+  - '&mt (LSHIFT | LALT) LCAPS'
+  - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - {t: F18, h: function}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - media
+  - {t: '$$mdi:keyboard-esc$$', h: media}
   - RCTL
-  - '&mt (RGUI | RALT | RCTRL | RSHIFT) F18'
+  - {t: F18, h: Meh+LGUI}
   - RCTL
-  - RGUI
+  - $$mdi:backspace-reverse-outline$$
