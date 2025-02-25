@@ -256,7 +256,7 @@ layers:
   - {t: F18, h: function}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-esc$$', h: media}
-  - RCTL
+  - $$mdi:apple-keyboard-control$$
   - {t: F18, h: Meh+LGUI}
-  - RCTL
+  - $$mdi:apple-keyboard-control$$
   - $$mdi:backspace-reverse-outline$$
