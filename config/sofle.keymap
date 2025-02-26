@@ -28,13 +28,9 @@
         };
 
         mt {
-            tapping-term-ms = <500>;
-            quick-tap-ms = <180>;
-            require-prior-idle-ms = <300>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
             flavor = "tap-preferred";
-            hold-trigger-on-release;
-            hold-trigger-key-positions = <>;
-            global-quick-tap;
         };
 
         // 간소화된 탭댄스 정의
