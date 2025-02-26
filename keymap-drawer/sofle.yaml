@@ -30,7 +30,7 @@ layers:
   - {t: LCAPS, h: '$$mdi:apple-keyboard-control$$'}
   - {t: A, h: '$$mdi:apple-keyboard-control$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - '&mo LGUI D'
+  - {t: D, h: LGUI}
   - LSHIFT F
   - G
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
@@ -225,7 +225,7 @@ layers:
   - {t: LCAPS, h: LGUI}
   - {t: A, h: LGUI}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - '&mo LCTRL D'
+  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
   - LSHIFT F
   - G
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
