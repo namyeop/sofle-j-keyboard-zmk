@@ -27,6 +27,13 @@
             delay-ms = <0>;                   //   10
         };
 
+        mt {
+            tapping-term-ms = <300>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <200>;
+            global-quick-tap;
+        };
+
         // 간소화된 탭댄스 정의
         td_lbkt: tap_dance_lbkt {
             compatible = "zmk,behavior-tap-dance";
@@ -83,7 +90,7 @@
 
     keymap {
         compatible = "zmk,keymap";
-
+        
         layer0 {
             bindings = <
             &kp GRAVE        &kp N1                     &kp N2     &kp N3      &kp N4        &kp N5     &mmv MOVE_UP     &kp N6      &kp N7         &kp N8         &kp N9       &kp N0           &kp MINUS
