@@ -30,7 +30,7 @@
         mt {
             tapping-term-ms = <500>;
             quick-tap-ms = <180>;
-            require-prio-idle-ms = <300>;
+            require-prior-idle-ms = <300>;
             flavor = "tap-preferred";
             hold-trigger-on-release;
             hold-trigger-key-positions = <>;
