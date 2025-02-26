@@ -28,10 +28,11 @@
         };
 
         mt {
-            tapping-term-ms = <280>;
-            quick-tap-ms = <300>;
+            tapping-term-ms = <350>;
+            quick-tap-ms = <180>;
             flavor = "tap-preferred";
             hold-trigger-on-release;
+            hold-trigger-key-positions = <>;
             global-quick-tap;
         };
 
