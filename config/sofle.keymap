@@ -27,13 +27,59 @@
             delay-ms = <0>;                   //   10
         };
 
-        mo_tap: momentary_layer_tap {
+        // 간소화된 탭댄스 정의
+        td_lbkt: tap_dance_lbkt {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LBKT>, <&kp LBRC>;  // [ 와 {
+        };
+
+        td_rbkt: tap_dance_rbkt {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp RBKT>, <&kp RBRC>;  // ] 와 }
+        };
+
+        td_bslh: tap_dance_bslh {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp BSLH>, <&kp PIPE>;  // \ 와 |
+        };
+
+        td_equal: tap_dance_equal {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp EQUAL>, <&kp PLUS>;  // = 와 +
+        };
+
+        td_sqt: tap_dance_sqt {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp SQT>, <&kp DQT>;  // ' 와 "
+        };
+
+        // 스티키 레이어 정의
+        sl_key: sticky_layer {
+            compatible = "zmk,behavior-sticky-key";
+            #binding-cells = <1>;
+            bindings = <&mo>;
+            release-after-ms = <1000>;
+            quick-release;
+        };
+
+        // 홀드-탭 스티키 레이어 정의
+        ht_sl: hold_tap_sticky_layer {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
             quick-tap-ms = <125>;
-            bindings = <&mo>, <&kp>;
+            bindings = <&sl_key>, <&kp>;
         };
     };
 
@@ -54,7 +100,7 @@
             &kp TAB          &kp Q                      &kp W      &kp E     &kp R      &kp T      &mmv MOVE_DOWN   &kp Y       &kp U     &kp I          &kp O      &kp P      &kp BACKSPACE
             &mt LCTRL LCAPS  &kp A                      &kp S      &kp D     &kp F      &kp G      &mmv MOVE_LEFT   &kp H       &kp J     &kp K          &kp L      &kp SEMI   &kp ENTER
             &kp LSHIFT       &kp Z                      &kp X      &kp C     &kp V      &kp B      &mmv MOVE_RIGHT  &kp N       &kp M     &kp COMMA      &kp DOT    &kp FSLH   &kp RSHIFT
-            &to 3            &mt LS(LC(LA(LGUI))) LCAPS &kp LGUI   &kp LALT  &kp SPACE  &lt 1 F18  &mkp LCLK        &lt 2 ESC   &kp RGUI  &mo_tap 4 F18  &kp RCTRL  &kp DEL
+            &to 3            &mt LS(LC(LA(LGUI))) LCAPS &kp LGUI   &kp LALT  &kp SPACE  &lt 1 F18  &mkp LCLK        &lt 2 ESC   &kp RGUI  &ht_sl 4 F18  &kp RCTRL  &kp DEL
             >;
 
             display-name = "main";
@@ -103,8 +149,8 @@
         layer_4 {
             bindings = <
             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans   &trans        &trans     &trans
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LBKT  &kp RBKT &kp BSLH      &kp EQUAL  &trans
-            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans   &trans        &kp SQT    &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &td_lbkt  &td_rbkt &td_bslh      &td_equal  &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans   &trans        &td_sqt    &trans
             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans   &trans        &trans     &trans
             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans   &trans        &trans
             >;
