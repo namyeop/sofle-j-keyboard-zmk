@@ -62,7 +62,7 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:keyboard-esc$$', h: media}
   - RGUI
-  - {t: F18, h: coding}
+  - {t: coding, h: '$$mdi:gesture-tap-hold$$'}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:backspace-reverse-outline$$
   function:
