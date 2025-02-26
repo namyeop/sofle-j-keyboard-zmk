@@ -28,17 +28,17 @@ layers:
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: LCAPS, h: '$$mdi:apple-keyboard-control$$'}
-  - A
-  - S
-  - D
-  - F
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: D, h: LGUI}
+  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
-  - H
-  - J
-  - K
-  - L
-  - {t: ;, s: ':'}
+  - {t: H, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: J, h: LGUI}
+  - {t: K, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-shift$$
   - Z
@@ -54,8 +54,8 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - {t: windows, h: toggle}
-  - {t: LCAPS, h: Meh+LGUI}
-  - LGUI
+  - '&mt LGUI'
+  - LS(LC(LA(LGUI))) LCAPS
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - {t: F18, h: function}
@@ -249,15 +249,15 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - {t: main, h: toggle}
-  - {t: LCAPS, h: Meh+LGUI}
-  - $$mdi:apple-keyboard-control$$
+  - '&mt LGUI'
+  - LS(LC(LA(LGUI))) LCAPS
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - {t: F18, h: function}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:keyboard-esc$$', h: media}
-  - $$mdi:apple-keyboard-control$$
-  - {t: F18, h: Meh+LGUI}
+  - RGUI
+  - {t: coding, h: '$$mdi:gesture-tap-hold$$'}
   - $$mdi:apple-keyboard-control$$
   - $$mdi:backspace-reverse-outline$$
   coding:
