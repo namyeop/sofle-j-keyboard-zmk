@@ -54,8 +54,8 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - {t: windows, h: toggle}
-  - '&mt LGUI'
-  - LS(LC(LA(LGUI))) LCAPS
+  - LGUI
+  - {t: LCAPS, h: Meh+LGUI}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - {t: F18, h: function}
@@ -249,8 +249,8 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - {t: main, h: toggle}
-  - '&mt LGUI'
-  - LS(LC(LA(LGUI))) LCAPS
+  - LGUI
+  - {t: LCAPS, h: Meh+LGUI}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - {t: F18, h: function}
