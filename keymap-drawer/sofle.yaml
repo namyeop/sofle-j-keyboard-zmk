@@ -28,17 +28,17 @@ layers:
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: LCAPS, h: '$$mdi:apple-keyboard-control$$'}
-  - A
-  - S
-  - D
-  - F
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - '&mo LGUI D'
+  - LSHIFT F
   - G
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - H
-  - J
-  - K
-  - L
-  - {t: ;, s: ':'}
+  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: K, h: LGUI}
+  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ':'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-shift$$
   - Z
@@ -223,17 +223,17 @@ layers:
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: LCAPS, h: LGUI}
-  - A
-  - S
-  - D
-  - F
+  - {t: A, h: LGUI}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - '&mo LCTRL D'
+  - LSHIFT F
   - G
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - H
-  - J
-  - K
-  - L
-  - {t: ;, s: ':'}
+  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: ;, h: LGUI, s: ':'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-shift$$
   - Z
