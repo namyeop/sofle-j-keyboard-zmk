@@ -86,11 +86,11 @@
 
         layer0 {
             bindings = <
-            &kp GRAVE        &kp N1                     &kp N2     &kp N3    &kp N4     &kp N5     &mmv MOVE_UP     &kp N6      &kp N7    &kp N8         &kp N9     &kp N0     &kp MINUS
-            &kp TAB          &kp Q                      &kp W      &kp E     &kp R      &kp T      &mmv MOVE_DOWN   &kp Y       &kp U     &kp I          &kp O      &kp P      &kp BACKSPACE
-            &mt LCTRL LCAPS  &kp A                      &kp S      &kp D     &kp F      &kp G      &mmv MOVE_LEFT   &kp H       &kp J     &kp K          &kp L      &kp SEMI   &kp ENTER
-            &kp LSHIFT       &kp Z                      &kp X      &kp C     &kp V      &kp B      &mmv MOVE_RIGHT  &kp N       &kp M     &kp COMMA      &kp DOT    &kp FSLH   &kp RSHIFT
-            &to 3            &mt LS(LC(LA(LGUI))) LCAPS &kp LGUI   &kp LALT  &kp SPACE  &lt 1 F18  &mkp LCLK        &lt 2 ESC   &kp RGUI  &sl_key 4      &kp RCTRL  &kp DEL
+            &kp GRAVE        &kp N1                     &kp N2     &kp N3      &kp N4        &kp N5     &mmv MOVE_UP     &kp N6      &kp N7         &kp N8         &kp N9       &kp N0           &kp MINUS
+            &kp TAB          &kp Q                      &kp W      &kp E       &kp R         &kp T      &mmv MOVE_DOWN   &kp Y       &kp U          &kp I          &kp O        &kp P            &kp BACKSPACE
+            &mt LCTRL LCAPS  &mt LCTRL A                &mt LALT S &mo LGUI D  &kp LSHIFT F  &kp G      &mmv MOVE_LEFT   &kp H       &mt LSHIFT J   &mt LGUI K     &mt LALT L   &mt LCTRL SEMI   &kp ENTER
+            &kp LSHIFT       &kp Z                      &kp X      &kp C       &kp V         &kp B      &mmv MOVE_RIGHT  &kp N       &kp M          &kp COMMA      &kp DOT      &kp FSLH         &kp RSHIFT
+            &to 3            &mt LS(LC(LA(LGUI))) LCAPS &kp LGUI   &kp LALT    &kp SPACE     &lt 1 F18  &mkp LCLK        &lt 2 ESC   &kp RGUI       &sl_key 4      &kp RCTRL    &kp DEL
             >;
 
             display-name = "main";
@@ -125,11 +125,11 @@
 
         layer_3 {
             bindings = <
-            &kp GRAVE         &kp N1                    &kp N2     &kp N3   &kp N4     &kp N5     &mmv MOVE_UP     &kp N6      &kp N7    &kp N8                    &kp N9       &kp N0       &kp MINUS
-            &kp TAB           &kp Q                     &kp W      &kp E    &kp R      &kp T      &mmv MOVE_DOWN   &kp Y       &kp U     &kp I                     &kp O        &kp P        &kp BACKSPACE
-            &mt LGUI LCAPS    &kp A                     &kp S      &kp D    &kp F      &kp G      &mmv MOVE_LEFT   &kp H       &kp J     &kp K                     &kp L        &kp SEMI     &kp ENTER
-            &kp LSHIFT        &kp Z                     &kp X      &kp C    &kp V      &kp B      &mmv MOVE_RIGHT  &kp N       &kp M     &kp COMMA                 &kp DOT      &kp FSLH     &kp RSHIFT
-            &to 0             &mt LS(LC(LA(LGUI))) LCAPS &kp LCTRL  &kp LALT &kp SPACE  &lt 1 F18  &mkp LCLK        &lt 2 ESC   &kp LCTRL &mt LS(LC(LA(LGUI))) F18  &kp LCTRL    &kp DEL
+            &kp GRAVE         &kp N1                     &kp N2     &kp N3      &kp N4        &kp N5     &mmv MOVE_UP     &kp N6      &kp N7         &kp N8                    &kp N9       &kp N0             &kp MINUS
+            &kp TAB           &kp Q                      &kp W      &kp E       &kp R         &kp T      &mmv MOVE_DOWN   &kp Y       &kp U          &kp I                     &kp O        &kp P              &kp BACKSPACE
+            &mt LGUI LCAPS    &mt LGUI A                 &mt LALT S &mo LCTRL D &kp LSHIFT F  &kp G      &mmv MOVE_LEFT   &kp H       &mt LSHIFT J   &mt LCTRL K               &mt LALT L   &mt LGUI SEMI      &kp ENTER
+            &kp LSHIFT        &kp Z                      &kp X      &kp C       &kp V         &kp B      &mmv MOVE_RIGHT  &kp N       &kp M          &kp COMMA                 &kp DOT      &kp FSLH           &kp RSHIFT
+            &to 0             &mt LS(LC(LA(LGUI))) LCAPS &kp LCTRL  &kp LALT    &kp SPACE     &lt 1 F18  &mkp LCLK        &lt 2 ESC   &kp LCTRL      &mt LS(LC(LA(LGUI))) F18  &kp LCTRL    &kp DEL
             >;
 
             display-name = "windows";
