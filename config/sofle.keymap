@@ -28,9 +28,9 @@
         };
 
         mt {
-            tapping-term-ms = <100>;
-            quick-tap-ms = <0>;
-            require-prior-idle-ms = <170>;
+            tapping-term-ms = <70>;
+            quick-tap-ms = <50>;
+            require-prior-idle-ms = <200>;
             flavor = "tap-preferred";
         };
 
