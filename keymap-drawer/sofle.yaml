@@ -57,7 +57,7 @@ layers:
   - LGUI
   - {t: LCAPS, h: Meh+LGUI}
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-space$$', h: Meh+LGUI}
   - {t: F18, h: function}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:keyboard-esc$$', h: media}
@@ -252,7 +252,7 @@ layers:
   - LGUI
   - {t: LCAPS, h: Meh+LGUI}
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-space$$', h: Meh+LGUI}
   - {t: F18, h: function}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:keyboard-esc$$', h: media}
