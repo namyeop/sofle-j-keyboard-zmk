@@ -100,7 +100,7 @@
             &kp TAB          &kp Q         &kp W                         &kp E          &kp R                      &kp T      &mmv MOVE_DOWN   &kp Y       &kp U            &kp I          &kp O          &kp P            &kp BACKSPACE
             &mt LCTRL LCAPS  &hrt LCTRL A  &hrt LALT S                   &hrt LGUI D    &hrt LSHIFT F              &kp G      &mmv MOVE_LEFT   &kp H       &hrt LSHIFT J    &hrt LGUI K    &hrt LALT L    &hrt LCTRL SEMI  &kp ENTER
             &kp LSHIFT       &kp Z         &kp X                         &kp C          &kp V                      &kp B      &mmv MOVE_RIGHT  &kp N       &kp M            &kp COMMA      &kp DOT        &kp FSLH         &kp RSHIFT
-            &to 3            &kp LGUI      &mt LS(LC(LA(LGUI))) LCAPS    &kp LALT       &mt LS(LC(LA(LGUI))) SPACE &lt 1 F18  &mkp LCLK        &lt 2 ESC   &kp RGUI         &sl_key 4      &kp RCTRL      &kp DEL
+            &to 3            &kp LGUI      &hrt LS(LC(LA(LGUI))) LCAPS   &kp LALT       &hrt LS(LC(LA(LGUI))) SPACE &lt 1 F18  &mkp LCLK        &lt 2 ESC   &kp RGUI         &sl_key 4      &kp RCTRL      &kp DEL
             >;
             
             display-name = "main";
@@ -139,7 +139,7 @@
             &kp TAB           &kp Q        &kp W                        &kp E         &kp R                      &kp T      &mmv MOVE_DOWN   &kp Y       &kp U          &kp I         &kp O        &kp P              &kp BACKSPACE
             &mt LGUI LCAPS    &hrt LGUI A  &hrt LALT S                  &hrt LCTRL D  &hrt LSHIFT F              &kp G      &mmv MOVE_LEFT   &kp H       &hrt LSHIFT J  &hrt LCTRL K  &hrt LALT L  &hrt LCTRL SEMI    &kp ENTER
             &kp LSHIFT        &kp Z        &kp X                        &kp C         &kp V                      &kp B      &mmv MOVE_RIGHT  &kp N       &kp M          &kp COMMA     &kp DOT      &kp FSLH           &kp RSHIFT
-            &to 0             &kp LGUI     &mt LS(LC(LA(LGUI))) LCAPS   &kp LALT      &mt LS(LC(LA(LGUI))) SPACE &lt 1 F18  &mkp LCLK        &lt 2 ESC   &kp RGUI       &sl_key 4     &kp RCTRL    &kp DEL
+            &to 0             &kp LGUI     &hrt LS(LC(LA(LGUI))) LCAPS  &kp LALT      &hrt LS(LC(LA(LGUI))) SPACE &lt 1 F18  &mkp LCLK        &lt 2 ESC   &kp RGUI       &sl_key 4     &kp RCTRL    &kp DEL
             >;
 
             display-name = "windows";
