@@ -111,9 +111,9 @@
             bindings = <
             &kp GRAVE         &kp N1       &kp N2                       &kp N3        &kp N4                      &kp N5     &mmv MOVE_UP     &kp N6      &kp N7         &kp N8        &kp N9       &kp N0             &kp MINUS
             &kp TAB           &kp Q        &kp W                        &kp E         &kp R                       &kp T      &mmv MOVE_DOWN   &kp Y       &kp U          &kp I         &kp O        &kp P              &kp BACKSPACE
-            &mt LGUI LCAPS    &hrt LGUI A  &hrt LALT S                  &hrt LCTRL D  &hrt LSHIFT F               &kp G      &mmv MOVE_LEFT   &kp H       &hrt LSHIFT J  &hrt LCTRL K  &hrt LALT L  &hrt LGUI SEMI     &kp ENTER
+            &mt RGUI LCAPS    &hrt RGUI A  &hrt LALT S                  &hrt LCTRL D  &hrt LSHIFT F               &kp G      &mmv MOVE_LEFT   &kp H       &hrt LSHIFT J  &hrt LCTRL K  &hrt LALT L  &hrt RGUI SEMI     &kp ENTER
             &kp LSHIFT        &kp Z        &kp X                        &kp C         &kp V                       &kp B      &mmv MOVE_RIGHT  &kp N       &kp M          &kp COMMA     &kp DOT      &kp FSLH           &kp RSHIFT
-            &to 0             &kp LGUI     &hrt LS(LC(LA(LGUI))) LCAPS  &kp LALT      &hrt LS(LC(LA(LGUI))) SPACE &lt 2 F18  &mkp LCLK        &lt 3 ESC   &kp LCTRL      &sl_key 4     &kp LALT     &kp DEL
+            &to 0             &kp RGUI     &hrt LS(LC(LA(RGUI))) LCAPS  &kp LALT      &hrt LS(LC(LA(LGUI))) SPACE &lt 2 F18  &mkp LCLK        &lt 3 ESC   &kp LCTRL      &sl_key 4     &kp LALT     &kp DEL
             >;
 
             display-name = "windows";
