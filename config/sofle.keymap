@@ -113,7 +113,7 @@
             &kp TAB           &kp Q        &kp W                        &kp E         &kp R                       &kp T      &mmv MOVE_DOWN   &kp Y       &kp U          &kp I         &kp O        &kp P              &kp BACKSPACE
             &mt RGUI LCAPS    &hrt RGUI A  &hrt LALT S                  &hrt LCTRL D  &hrt LSHIFT F               &kp G      &mmv MOVE_LEFT   &kp H       &hrt LSHIFT J  &hrt LCTRL K  &hrt LALT L  &hrt RGUI SEMI     &kp ENTER
             &kp LSHIFT        &kp Z        &kp X                        &kp C         &kp V                       &kp B      &mmv MOVE_RIGHT  &kp N       &kp M          &kp COMMA     &kp DOT      &kp FSLH           &kp RSHIFT
-            &to 0             &kp RGUI     &hrt LS(LC(LA(RGUI))) LCAPS  &kp LALT      &hrt LS(LC(LA(LGUI))) SPACE &lt 2 F18  &mkp LCLK        &lt 3 ESC   &kp LCTRL      &sl_key 4     &kp LALT     &kp DEL
+            &to 0             &kp RGUI     &hrt LS(LC(LA(RGUI))) LCAPS  &kp LALT      &hrt LS(LC(LA(RGUI))) SPACE &lt 2 F18  &mkp LCLK        &lt 3 ESC   &kp LCTRL      &sl_key 4     &kp LALT     &kp DEL
             >;
 
             display-name = "windows";
