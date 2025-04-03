@@ -122,7 +122,7 @@ layers:
   - RGUI
   - {t: LCAPS, h: Meh+RGUI}
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:keyboard-space$$', h: Meh+LGUI}
+  - {t: '$$mdi:keyboard-space$$', h: Meh+RGUI}
   - {t: F18, h: function}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:keyboard-esc$$', h: media}
