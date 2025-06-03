@@ -13,7 +13,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - '&td_0_equal'
-  - '&td_minus_backslash'
+  - '&td_minus_foreslash'
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -51,7 +51,7 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - '&td_foreslash_quote'
+  - '&td_backslash_quote'
   - $$mdi:apple-keyboard-shift$$
   - {t: windows, h: toggle}
   - LGUI
