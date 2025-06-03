@@ -94,18 +94,18 @@
             bindings = <&kp N0>, <&kp EQUAL>;  // 0 와 =
         };
 
-        td_minus_foreslash: tap_dance_minus_slash {
+        td_minus_backslash: tap_dance_minus_backslash {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp MINUS>, <&kp FSLH>;  // - 와 /
+            bindings = <&kp MINUS>, <&kp BSLH>;  // - 와 \
         };
 
-        td_backslash_quote: tap_dance_backslash_quote {
+        td_foreslash_quote: tap_dance_foreslash_quote {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp BSLH>, <&kp SQT>;  // \ 와 '
+            bindings = <&kp FSLH>, <&kp SQT>;  // / 와 '
         };
 
         // 스티키 레이어 정의
@@ -131,10 +131,10 @@
         
         layer_0 {
             bindings = <
-            &kp GRAVE        &kp N1        &kp N2                        &kp N3         &kp N4                      &kp N5     &mmv MOVE_UP     &kp N6      &kp N7           &kp N8         &kp N9         &td_0_equal            &td_minus_foreslash
+            &kp GRAVE        &kp N1        &kp N2                        &kp N3         &kp N4                      &kp N5     &mmv MOVE_UP     &kp N6      &kp N7           &kp N8         &kp N9         &td_0_equal            &td_minus_backslash
             &kp TAB          &kp Q         &kp W                         &kp E          &kp R                       &kp T      &mmv MOVE_DOWN   &kp Y       &kp U            &kp I          &td_o_lbkt     &td_p_rbkt             &kp BACKSPACE
             &mt LCTRL ESC    &hrt LCTRL A  &hrt LALT S                   &hrt LGUI D    &hrt LSHIFT F               &kp G      &mmv MOVE_LEFT   &kp H       &hrt LSHIFT J    &hrt LGUI K    &hrt LALT L    &hrt LCTRL SEMI        &kp ENTER
-            &kp LSHIFT       &kp Z         &kp X                         &kp C          &kp V                       &kp B      &mmv MOVE_RIGHT  &kp N       &kp M            &kp COMMA      &kp DOT        &td_backslash_quote    &kp RSHIFT
+            &kp LSHIFT       &kp Z         &kp X                         &kp C          &kp V                       &kp B      &mmv MOVE_RIGHT  &kp N       &kp M            &kp COMMA      &kp DOT        &td_foreslash_quote    &kp RSHIFT
             &to 1            &kp LGUI      &hrt LS(LC(LA(LGUI))) LCAPS   &kp LALT       &hrt LS(LC(LA(LGUI))) SPACE &lt 2 F18  &mkp LCLK        &lt 3 F18   &mt RGUI SPACE   &sl_key 4      &kp RCTRL      &kp DEL
             >;
             
