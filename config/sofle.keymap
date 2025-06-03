@@ -73,6 +73,20 @@
             bindings = <&kp SQT>, <&kp DQT>;  // ' 와 "
         };
 
+        td_o_lbkt: tap_dance_o_lbkt {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp O>, <&kp LBKT>;  // o[ 와 o{
+        };
+
+        td_p_rbkt: tap_dance_p_rbkt {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp O>, <&kp RBKT>;  // o] 와 o}
+        };
+
         // 스티키 레이어 정의
         sl_key: sticky_layer {
             compatible = "zmk,behavior-sticky-key";
@@ -97,10 +111,10 @@
         layer_0 {
             bindings = <
             &kp GRAVE        &kp N1        &kp N2                        &kp N3         &kp N4                      &kp N5     &mmv MOVE_UP     &kp N6      &kp N7           &kp N8         &kp N9         &kp N0           &kp MINUS
-            &kp TAB          &kp Q         &kp W                         &kp E          &kp R                       &kp T      &mmv MOVE_DOWN   &kp Y       &kp U            &kp I          &kp O          &kp P            &kp BACKSPACE
-            &mt LCTRL LCAPS  &hrt LCTRL A  &hrt LALT S                   &hrt LGUI D    &hrt LSHIFT F               &kp G      &mmv MOVE_LEFT   &kp H       &hrt LSHIFT J    &hrt LGUI K    &hrt LALT L    &hrt LCTRL SEMI  &kp ENTER
+            &kp TAB          &kp Q         &kp W                         &kp E          &kp R                       &kp T      &mmv MOVE_DOWN   &kp Y       &kp U            &kp I          &td_o_lbkt     &td_p_rbkt       &kp BACKSPACE
+            &mt LCTRL ESC    &hrt LCTRL A  &hrt LALT S                   &hrt LGUI D    &hrt LSHIFT F               &kp G      &mmv MOVE_LEFT   &kp H       &hrt LSHIFT J    &hrt LGUI K    &hrt LALT L    &hrt LCTRL SEMI  &kp ENTER
             &kp LSHIFT       &kp Z         &kp X                         &kp C          &kp V                       &kp B      &mmv MOVE_RIGHT  &kp N       &kp M            &kp COMMA      &kp DOT        &kp FSLH         &kp RSHIFT
-            &to 1            &kp LGUI      &hrt LS(LC(LA(LGUI))) LCAPS   &kp LALT       &hrt LS(LC(LA(LGUI))) SPACE &lt 2 F18  &mkp LCLK        &lt 3 ESC   &kp RGUI         &sl_key 4      &kp RCTRL      &kp DEL
+            &to 1            &kp LGUI      &hrt LS(LC(LA(LGUI))) LCAPS   &kp LALT       &hrt LS(LC(LA(LGUI))) SPACE &lt 2 F18  &mkp LCLK        &lt 3 F18   &mt RGUI SPACE   &sl_key 4      &kp RCTRL      &kp DEL
             >;
             
             display-name = "main";
@@ -109,11 +123,11 @@
 
         layer_1 {
             bindings = <
-            &kp GRAVE         &kp N1       &kp N2                       &kp N3        &kp N4                      &kp N5     &mmv MOVE_UP     &kp N6      &kp N7         &kp N8        &kp N9       &kp N0             &kp MINUS
-            &kp TAB           &kp Q        &kp W                        &kp E         &kp R                       &kp T      &mmv MOVE_DOWN   &kp Y       &kp U          &kp I         &kp O        &kp P              &kp BACKSPACE
-            &mt RGUI LCAPS    &hrt RGUI A  &hrt LALT S                  &hrt LCTRL D  &hrt LSHIFT F               &kp G      &mmv MOVE_LEFT   &kp H       &hrt LSHIFT J  &hrt LCTRL K  &hrt LALT L  &hrt RGUI SEMI     &kp ENTER
-            &kp LSHIFT        &kp Z        &kp X                        &kp C         &kp V                       &kp B      &mmv MOVE_RIGHT  &kp N       &kp M          &kp COMMA     &kp DOT      &kp FSLH           &kp RSHIFT
-            &to 0             &kp RGUI     &hrt LS(LC(LA(RGUI))) LCAPS  &kp LALT      &hrt LS(LC(LA(RGUI))) SPACE &lt 2 F18  &mkp LCLK        &lt 3 ESC   &kp LCTRL      &sl_key 4     &kp LALT     &kp DEL
+            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans   &trans        &trans     &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &td_lbkt  &td_rbkt &td_bslh      &td_equal  &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans   &trans        &td_sqt    &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans   &trans        &trans     &trans
+            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans   &trans        &trans
             >;
 
             display-name = "windows";
@@ -124,11 +138,11 @@
             bindings = <
             &trans      &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &kp UP        &kp F6           &kp F7           &kp F8       &kp F9    &kp F10  &kp F11
             &trans      &trans           &mkp MB4        &mkp MB5         &mkp RCLK        &trans             &kp DOWN      &kp PG_UP        &kp END          &trans       &trans    &trans   &kp F12
-            &trans      &trans           &trans          &trans           &trans           &trans             &kp LEFT      &kp PG_DN        &trans           &trans       &trans    &trans  &trans
+            &trans      &trans           &trans          &trans           &trans           &trans             &kp LEFT      &kp PG_DN        &trans           &trans       &trans    &trans   &trans
             &trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &kp RIGHT     &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT   &trans    &trans   &trans
             &kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &kp ENTER     &trans           &trans           &trans       &trans    &trans
             >;
- 
+         
             display-name = "function";
             sensor-bindings = <&scroll_encoder>;
         };
