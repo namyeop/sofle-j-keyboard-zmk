@@ -77,7 +77,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp O>, <&kp LBKT>;  // o[ 와 o{
+            bindings = <&kp P>, <&kp LBKT>;  // o[ 와 o{
         };
 
         td_p_rbkt: tap_dance_p_rbkt {
