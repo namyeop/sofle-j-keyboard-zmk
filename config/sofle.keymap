@@ -98,14 +98,14 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp MINUS>, <&kp FSLH>;  // - 와 /
+            bindings = <&kp MINUS>, <&kp BSLH>;  // - 와 /
         };
 
         td_backslash_quote: tap_dance_backslash_quote {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp BSLH>, <&kp SQT>;  // \ 와 '
+            bindings = <&kp FSLH>, <&kp SQT>;  // \ 와 '
         };
 
         td_u_lpar: tap_dance_u_lpar {
