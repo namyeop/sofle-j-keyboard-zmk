@@ -22,8 +22,8 @@ layers:
   - T
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - Y
-  - U
-  - I
+  - '&td_u_lpar'
+  - '&td_i_rpar'
   - '&td_o_lbkt'
   - '&td_p_rbkt'
   - {t: '$$mdi:backspace$$', type: backspace}
